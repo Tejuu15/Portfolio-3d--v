@@ -9,6 +9,7 @@
   --mono: "DM Mono", monospace;
 }
 
+/* Shared design tokens keep the visual system easy to customize. */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--display); }
@@ -22,6 +23,7 @@ a { color: inherit; text-decoration: none; }
 .site-nav a:hover, .header-cta:hover, .text-link:hover, .site-footer a:hover { color: var(--orange); }
 .header-cta { font-size: .9rem; padding: 12px 0; }
 .menu-toggle { display: none; background: none; border: 0; }
+/* Hero and project artwork use CSS shapes, so the site stays dependency-free. */
 .hero { min-height: 680px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 60px; padding: 100px 0; }
 .eyebrow { margin: 0 0 28px; color: var(--muted); font: .68rem var(--mono); letter-spacing: .12em; text-transform: uppercase; }
 .status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: #6acb83; box-shadow: 0 0 0 4px rgba(106, 203, 131, .15); }
