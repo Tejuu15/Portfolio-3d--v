@@ -1,8 +1,10 @@
-# Portfolio 3D
+# K M Tejamurthy — React Portfolio
 
-A React portfolio built with Vite. The current page is a React conversion of the
-original static portfolio and preserves its responsive layout, abstract hero art,
-project cards, mobile navigation, and cursor glow.
+A React portfolio built with Vite for an Artificial Intelligence and Machine
+Learning engineering student. The page preserves the original portfolio's
+responsive layout, abstract hero art, project cards, mobile navigation, and
+cursor glow while replacing standalone DOM scripting with React state and
+effects.
 
 ## Run locally
 
