@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
 import './App.css'
+import Cursor from './components/Cursor/Cursor'
+import Navbar from './components/Navbar/Navbar'
 
 const projects = [
   {
@@ -60,60 +61,10 @@ function ProjectVisual({ project }) {
 }
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
-
-  useEffect(() => {
-    const handlePointerMove = (event) => {
-      setCursorPosition({ x: event.clientX, y: event.clientY })
-    }
-
-    window.addEventListener('pointermove', handlePointerMove)
-    return () => window.removeEventListener('pointermove', handlePointerMove)
-  }, [])
-
-  const closeMenu = () => setIsMenuOpen(false)
-
   return (
     <>
-      <div
-        className="cursor-glow"
-        aria-hidden="true"
-        style={{ left: cursorPosition.x, top: cursorPosition.y }}
-      />
-
-      <header className="site-header">
-        <a className="logo" href="#top" aria-label="Back to top" onClick={closeMenu}>
-          KMT<span>.</span>
-        </a>
-
-        <button
-          className="menu-toggle"
-          type="button"
-          aria-expanded={isMenuOpen}
-          aria-controls="site-nav"
-          onClick={() => setIsMenuOpen((open) => !open)}
-        >
-          <span />
-          <span />
-          <span className="sr-only">Toggle navigation</span>
-        </button>
-
-        <nav
-          id="site-nav"
-          className={`site-nav${isMenuOpen ? ' open' : ''}`}
-          aria-label="Main navigation"
-        >
-          <a href="#work" onClick={closeMenu}>Projects</a>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#experience" onClick={closeMenu}>Experience</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
-        </nav>
-
-        <a className="header-cta" href="#contact">
-          Let&apos;s connect <span aria-hidden="true">↗</span>
-        </a>
-      </header>
+      <Cursor />
+      <Navbar />
 
       <main id="top">
         <section className="hero section-shell">
