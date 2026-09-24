@@ -3,24 +3,24 @@ import './App.css'
 
 const projects = [
   {
-    name: 'Aurora Finance',
-    description: 'A calmer way to understand your money.',
-    year: '2024',
-    category: 'Brand / Web',
+    name: 'Movie Recommendation System',
+    description: 'Personalized discovery powered by content-based, collaborative, and hybrid filtering.',
+    year: '01',
+    category: 'AI / Recommendation / 2025',
     visual: 'aurora',
   },
   {
-    name: 'Field Notes',
-    description: 'Tools for a more intentional creative practice.',
-    year: '2023',
-    category: 'Product / UI',
+    name: 'Smart Legal Research Assistant',
+    description: 'Semantic search, judgment summarization, and case recommendations for commercial courts.',
+    year: '02',
+    category: 'NLP / Product / 2025',
     visual: 'field',
   },
   {
-    name: 'Signal Studio',
-    description: 'A visual identity for the next wave.',
-    year: '2023',
-    category: 'Identity / 3D',
+    name: 'Human-centered interfaces',
+    description: 'Clear, innovative experiences that make complex technology feel approachable.',
+    year: '03',
+    category: 'UI / UX / Competition',
     visual: 'signal',
   },
 ]
@@ -32,7 +32,7 @@ function ProjectVisual({ project }) {
         <span className="image-tag">{project.category}</span>
         <div className="aurora-shape" />
         <strong>
-          aurora<span>™</span>
+          Re<span>co</span>
         </strong>
       </div>
     )
@@ -53,7 +53,7 @@ function ProjectVisual({ project }) {
   return (
     <div className="project-image image-signal">
       <span className="image-tag">{project.category}</span>
-      <div className="signal-cube">S</div>
+      <div className="signal-cube">K</div>
       <div className="signal-lines" />
     </div>
   )
@@ -84,7 +84,7 @@ function App() {
 
       <header className="site-header">
         <a className="logo" href="#top" aria-label="Back to top" onClick={closeMenu}>
-          AM<span>.</span>
+          KMT<span>.</span>
         </a>
 
         <button
@@ -104,13 +104,14 @@ function App() {
           className={`site-nav${isMenuOpen ? ' open' : ''}`}
           aria-label="Main navigation"
         >
-          <a href="#work" onClick={closeMenu}>Work</a>
+          <a href="#work" onClick={closeMenu}>Projects</a>
           <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#experience" onClick={closeMenu}>Experience</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
 
         <a className="header-cta" href="#contact">
-          Let&apos;s talk <span aria-hidden="true">↗</span>
+          Let&apos;s connect <span aria-hidden="true">↗</span>
         </a>
       </header>
 
@@ -119,21 +120,22 @@ function App() {
           <div className="hero-copy">
             <p className="eyebrow">
               <span className="status-dot" />
-              Available for select projects
+              AI/ML engineer in the making
             </p>
             <h1>
-              Designing bold ideas into <em>digital reality.</em>
+              Building intelligent solutions with <em>purpose.</em>
             </h1>
             <p className="hero-intro">
-              I&apos;m Alex Morgan, a creative developer crafting expressive websites and
-              products where strategy, motion, and technology meet.
+              I&apos;m <strong>K M Tejamurthy</strong>, an Artificial Intelligence and
+              Machine Learning engineering student passionate about secure, scalable,
+              and user-centric applications.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">
                 Explore my work <span>↓</span>
               </a>
-              <a className="text-link" href="mailto:hello@example.com">
-                hello@example.com <span>↗</span>
+              <a className="text-link" href="mailto:tejamurthykm@gmail.com">
+                tejamurthykm@gmail.com <span>↗</span>
               </a>
             </div>
           </div>
@@ -146,15 +148,15 @@ function App() {
               <div className="orb-shine" />
             </div>
             <span className="art-label label-top">01 / 03</span>
-            <span className="art-label label-bottom">Scroll to explore ↓</span>
+            <span className="art-label label-bottom">Kalaburagi, Karnataka ↓</span>
           </div>
         </section>
 
         <section id="work" className="work section-shell">
           <div className="section-heading">
-            <p className="eyebrow">Selected work</p>
-            <h2>A few things I&apos;ve made.</h2>
-            <p>Digital experiences built with curiosity, clarity, and a little bit of magic.</p>
+            <p className="eyebrow">Selected projects</p>
+            <h2>Ideas turned into working systems.</h2>
+            <p>Intelligent products that bring together research, engineering, and thoughtful user experiences.</p>
           </div>
 
           <div className="project-grid">
@@ -178,32 +180,61 @@ function App() {
 
         <section id="about" className="about section-shell">
           <div className="section-heading">
-            <p className="eyebrow">A little about me</p>
-            <h2>Building with intention.</h2>
+            <p className="eyebrow">Profile</p>
+            <h2>Curious by nature. Focused by craft.</h2>
+            <p>Always learning, always looking for a better way to solve meaningful problems.</p>
           </div>
           <div className="about-content">
             <p className="about-lead">
-              Good work lives at the intersection of <span>empathy</span>, experimentation,
-              and execution.
+              Technology should be <span>intelligent</span>, secure, and human.
             </p>
             <div className="about-details">
               <p>
-                I partner with ambitious people and teams to turn complex problems into
-                simple, memorable experiences. From early sketches to the final line of code,
-                I care about the details that make products feel human.
+                Passionate and versatile technology enthusiast with strong interests in Web
+                Application Development, AI &amp; ML, Cybersecurity, Data Visualization,
+                and Full-Stack Development.
               </p>
               <p>
-                When I&apos;m not designing or coding, you&apos;ll find me collecting old
-                magazines, making coffee, or exploring a new city on foot.
+                I enjoy creating optimized, interactive solutions with a focus on security,
+                real-time processing, backend systems, and engaging frontend experiences.
               </p>
             </div>
           </div>
-          <div className="tool-list" aria-label="Skills and tools">
-            <span>Art direction</span>
-            <span>UI/UX design</span>
-            <span>Frontend development</span>
-            <span>Creative coding</span>
-            <span>Motion design</span>
+          <div className="tool-list" aria-label="Technical skills">
+            <span>Java</span><span>Python</span><span>JavaScript</span><span>React.js</span>
+            <span>Django</span><span>REST API</span><span>TensorFlow</span><span>Scikit-learn</span>
+            <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span><span>GitHub</span>
+          </div>
+        </section>
+
+        <section id="experience" className="resume-section section-shell">
+          <div className="section-heading">
+            <p className="eyebrow">Experience &amp; education</p>
+            <h2>The foundation behind the work.</h2>
+            <p>Learning through classrooms, internships, competitions, and building real projects.</p>
+          </div>
+          <div className="timeline">
+            <article className="timeline-item">
+              <div className="timeline-date">APR — MAY 2026</div>
+              <div><h3>AIML Intern · Elevate Labs</h3><p>Worked on real-time AI/ML projects involving data preprocessing, model building, and evaluation. Used Python, TensorFlow, and Scikit-learn while collaborating with the AI/ML team on practical intelligent solutions.</p></div>
+            </article>
+            <article className="timeline-item">
+              <div className="timeline-date">2023 — 2027</div>
+              <div><h3>B.E. Artificial Intelligence &amp; Machine Learning</h3><p>Shetty Institute of Technology, Kalaburagi · CGPA: 8.5</p><small>Coursework: Computer Networks, OOP, DBMS, AIML, Operating Systems, Data Visualization</small></div>
+            </article>
+            <article className="timeline-item">
+              <div className="timeline-date">2020 — 2022</div>
+              <div><h3>Physics, Chemistry, Mathematics &amp; Biology</h3><p>Kalmath Independence PU College, Bengaluru · Percentage: 78%</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section className="highlights section-shell">
+          <div><p className="eyebrow">Recognition</p><h2>Always showing up to learn and contribute.</h2></div>
+          <div className="highlight-grid">
+            <div><b>1st Prize</b><p>UI/UX Competition at TeckX COMEDKares for innovative, user-centric interface design.</p></div>
+            <div><b>Certifications</b><p>AIML — Honeywell · Cybersecurity — Honeywell · Cybersecurity — Cyseck</p></div>
+            <div><b>Hackathons</b><p>International Space Apps Challenge · Make4Mysore · InnovateX at Presidency University</p></div>
           </div>
         </section>
 
@@ -211,19 +242,19 @@ function App() {
           <div>
             <p className="eyebrow">Have a good one?</p>
             <h2>
-              Let&apos;s make something
+              Let&apos;s build something
               <br />
-              <em>great together.</em>
+              <em>meaningful together.</em>
             </h2>
           </div>
-          <a className="contact-link" href="mailto:hello@example.com">
-            hello@example.com <span>↗</span>
+          <a className="contact-link" href="mailto:tejamurthykm@gmail.com">
+            tejamurthykm@gmail.com <span>↗</span>
           </a>
         </section>
       </main>
 
       <footer className="site-footer section-shell">
-        <p>© {new Date().getFullYear()} Alex Morgan. Made with intent.</p>
+        <p>© {new Date().getFullYear()} K M Tejamurthy. Made with intent.</p>
         <div>
           <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
